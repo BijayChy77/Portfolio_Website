@@ -187,13 +187,14 @@
       }
 
       /* ─── Hero ─── */
+   /* ─── Hero ─── */
       #hero {
         position: relative;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        padding: 0 48px 72px;
+        justify-content: center; /* Changed from flex-end to center */
+        padding: 120px 48px 72px; /* Added 120px top padding so navigation doesn't overlap text */
         z-index: 1;
         overflow: hidden;
       }
