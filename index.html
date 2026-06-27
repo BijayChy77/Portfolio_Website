@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -158,7 +158,7 @@
         background: rgba(14, 14, 18, 0.7);
       }
       .logo {
-        font-family: "Syne", sans-serif;
+        font-family: "Playfair Display", serif;
         font-weight: 800;
         font-size: 1.1rem;
         letter-spacing: -0.02em;
@@ -209,11 +209,11 @@
         animation: fadeUp 0.6s 0.3s forwards;
       }
       .hero-title {
-        font-family: "Syne", sans-serif;
-        font-size: clamp(3.4rem, 9vw, 8.5rem);
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.8rem, 8vw, 7.5rem);
         font-weight: 800;
-        line-height: 0.94;
-        letter-spacing: -0.03em;
+        line-height: 1.05;
+        letter-spacing: -0.015em;
         overflow: hidden;
       }
       .hero-title .line {
@@ -326,7 +326,7 @@
         margin-bottom: 14px;
       }
       .section-heading {
-        font-family: "Syne", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: clamp(2rem, 4vw, 3.2rem);
         font-weight: 800;
         letter-spacing: -0.025em;
@@ -495,7 +495,7 @@
         color: var(--muted);
       }
       .proj-name {
-        font-family: "Syne", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: 1.25rem;
         font-weight: 700;
         letter-spacing: -0.01em;
@@ -544,7 +544,7 @@
         background: var(--surface);
       }
       .step-num {
-        font-family: "Syne", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: 0.72rem;
         font-weight: 700;
         letter-spacing: 0.1em;
@@ -556,7 +556,7 @@
         margin-bottom: 16px;
       }
       .step-title {
-        font-family: "Syne", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: 1.05rem;
         font-weight: 700;
         margin-bottom: 10px;
@@ -613,7 +613,7 @@
         font-size: 2rem;
       }
       .cert-title {
-        font-family: "Syne", sans-serif;
+        font-family: "Playfair Display", serif;
         font-weight: 700;
         font-size: 0.95rem;
         margin-bottom: 2px;
@@ -630,10 +630,10 @@
         padding-bottom: 140px;
       }
       .contact-heading {
-        font-family: "Syne", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: clamp(2.8rem, 7vw, 6rem);
         font-weight: 800;
-        letter-spacing: -0.03em;
+        letter-spacing: -0.015em;
         line-height: 1.05;
         margin-bottom: 32px;
       }
@@ -804,6 +804,12 @@
         *::after {
           animation: none !important;
           transition: none !important;
+        }
+        .hero-eyebrow,
+        .hero-title .line,
+        .hero-meta {
+          opacity: 1 !important;
+          transform: none !important;
         }
       }
     </style>
@@ -1174,6 +1180,14 @@
         requestAnimationFrame(animateRing);
       })();
 
+
+      // Safety net: ensure hero elements always visible after animations
+      setTimeout(() => {
+        document.querySelectorAll('.hero-eyebrow, .hero-title .line, .hero-meta').forEach(el => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        });
+      }, 1800);
       // Nav scroll
       const nav = document.getElementById("nav");
       window.addEventListener("scroll", () => {
