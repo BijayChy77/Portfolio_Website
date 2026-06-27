@@ -1,884 +1,763 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>bj — UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 
-  <!-- ═══════════════════════════════════════════
-       PRIMARY SEO META TAGS
-  ════════════════════════════════════════════ -->
-  <title>How to Learn SEO as a Beginner in 2025 — Complete Step-by-Step Guide</title>
-  <meta name="description" content="A complete beginner's guide to learning SEO in 2025. Learn on-page SEO, technical SEO, link building, and keyword research with practical steps you can start today." />
-  <meta name="keywords" content="learn SEO, SEO for beginners, SEO guide 2025, on-page SEO, technical SEO, keyword research, link building, search engine optimization" />
-  <meta name="author" content="Bijay Chaudhary" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://bijaychaudhary123.com.np/how-to-learn-seo-beginners" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- ═══════════════════════════════════════════
-       OPEN GRAPH (Facebook, LinkedIn, Discord)
-  ════════════════════════════════════════════ -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="How to Learn SEO as a Beginner in 2025 — Complete Guide" />
-  <meta property="og:description" content="A complete beginner's guide to learning SEO in 2025. Keyword research, on-page SEO, technical SEO, and link building — explained simply." />
-  <meta property="og:url" content="https://bijaychaudhary123.com.np/how-to-learn-seo-beginners" />
-  <meta property="og:image" content="https://bijaychaudhary123.com.np/images/seo-guide-og.jpg" />
-  <meta property="og:site_name" content="Bijay Chaudhary" />
-  <meta property="article:published_time" content="2025-06-23T00:00:00+05:45" />
-  <meta property="article:author" content="Bijay Chaudhary" />
-  <meta property="article:tag" content="SEO" />
-  <meta property="article:tag" content="Digital Marketing" />
-  <meta property="article:tag" content="Beginners Guide" />
-
-  <!-- ═══════════════════════════════════════════
-       TWITTER / X CARD
-  ════════════════════════════════════════════ -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="How to Learn SEO as a Beginner in 2025" />
-  <meta name="twitter:description" content="A complete beginner's guide to SEO in 2025 — keyword research, on-page, technical SEO, and link building." />
-  <meta name="twitter:image" content="https://bijaychaudhary123.com.np/images/seo-guide-og.jpg" />
-  <meta name="twitter:site" content="@yourhandle" />
-
-  <!-- ═══════════════════════════════════════════
-       STRUCTURED DATA — Article Schema (JSON-LD)
-  ════════════════════════════════════════════ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "How to Learn SEO as a Beginner in 2025 — Complete Step-by-Step Guide",
-    "description": "A complete beginner's guide to learning SEO in 2025. Learn on-page SEO, technical SEO, link building, and keyword research with practical steps you can start today.",
-    "image": "https://yourdomain.com.np/images/seo-guide-og.jpg",
-    "author": {
-      "@type": "Person",
-      "name": "Your Name",
-      "url": "https://yourdomain.com.np/about"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Your Blog Name",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://yourdomain.com.np/logo.png"
-      }
-    },
-    "datePublished": "2025-06-23",
-    "dateModified": "2025-06-23",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://yourdomain.com.np/how-to-learn-seo-beginners"
-    }
+  :root {
+    --bg:       #0E0E12;
+    --surface:  #16161C;
+    --text:     #F5F0E8;
+    --muted:    #6E6E7A;
+    --lime:     #C8FF57;
+    --indigo:   #6B6BFF;
+    --border:   rgba(245,240,232,0.08);
+    --radius:   14px;
   }
-  </script>
 
-  <!-- ═══════════════════════════════════════════
-       BREADCRUMB SCHEMA
-  ════════════════════════════════════════════ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourdomain.com.np" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yourdomain.com.np/blog" },
-      { "@type": "ListItem", "position": 3, "name": "How to Learn SEO as a Beginner", "item": "https://yourdomain.com.np/how-to-learn-seo-beginners" }
-    ]
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    cursor: none;
   }
-  </script>
 
-  <!-- ═══════════════════════════════════════════
-       FAQ SCHEMA (boosts rich snippets in Google)
-  ════════════════════════════════════════════ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How long does it take to learn SEO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most beginners grasp the core SEO concepts within 1–3 months of consistent study and practice. Seeing real results on a website usually takes 3–6 months, since search engines need time to crawl and rank your pages."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is SEO free to learn?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! SEO is free to learn. Google's own documentation, Moz's Beginner's Guide, and Ahrefs Blog are all free resources. You only need to pay for premium tools once you're working professionally."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need coding skills to learn SEO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basic HTML knowledge helps for technical SEO, but it is not required to start. Most modern CMS platforms (WordPress, GitHub Pages) handle the code, and you can focus on content and strategy first."
-        }
-      }
-    ]
+  /* ─── Custom cursor ─── */
+  #cursor {
+    position: fixed; top: 0; left: 0;
+    width: 12px; height: 12px;
+    background: var(--lime);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.08s ease, width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+    mix-blend-mode: difference;
   }
-  </script>
+  #cursor-ring {
+    position: fixed; top: 0; left: 0;
+    width: 36px; height: 36px;
+    border: 1.5px solid rgba(200,255,87,0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.18s ease, width 0.2s, height 0.2s, border-color 0.2s;
+  }
+  body:has(a:hover) #cursor,
+  body:has(button:hover) #cursor { width: 20px; height: 20px; }
+  body:has(a:hover) #cursor-ring,
+  body:has(button:hover) #cursor-ring { width: 54px; height: 54px; border-color: var(--lime); }
 
-  <!-- ═══════════════════════════════════════════
-       FONTS & STYLES
-  ════════════════════════════════════════════ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  /* ─── Spotlight ─── */
+  #spotlight {
+    position: fixed; inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(circle 340px at var(--mx,50%) var(--my,50%), rgba(107,107,255,0.07) 0%, transparent 70%);
+    transition: background 0.1s;
+  }
 
-  <style>
-    /* ─── DESIGN TOKENS ─── */
-    :root {
-      --navy:    #0f172a;
-      --slate:   #1e293b;
-      --muted:   #64748b;
-      --border:  #e2e8f0;
-      --bg:      #f8fafc;
-      --white:   #ffffff;
-      --green:   #16a34a;
-      --green-lt:#dcfce7;
-      --text:    #1e293b;
-      --link:    #0d9488;
+  /* ─── Nav ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 48px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s, backdrop-filter 0.3s, background 0.3s;
+  }
+  nav.scrolled {
+    border-color: var(--border);
+    backdrop-filter: blur(18px);
+    background: rgba(14,14,18,0.7);
+  }
+  .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .logo span { color: var(--lime); }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--text); }
 
-      --font-display: 'Playfair Display', Georgia, serif;
-      --font-body:    'Inter', system-ui, sans-serif;
+  /* ─── Hero ─── */
+  #hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 48px 72px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .hero-eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin-bottom: 20px;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.3s forwards;
+  }
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(3.4rem, 9vw, 8.5rem);
+    font-weight: 800;
+    line-height: 0.94;
+    letter-spacing: -0.03em;
+    overflow: hidden;
+  }
+  .hero-title .line {
+    display: block;
+    opacity: 0;
+    transform: translateY(60px);
+    animation: slideUp 0.7s cubic-bezier(0.22,1,0.36,1) forwards;
+  }
+  .hero-title .line:nth-child(1) { animation-delay: 0.5s; }
+  .hero-title .line:nth-child(2) { animation-delay: 0.65s; color: var(--muted); }
+  .hero-title .line:nth-child(3) { animation-delay: 0.8s; }
+  .hero-title em { font-style: normal; color: var(--lime); }
 
-      --radius: 10px;
-      --max-w:  740px;
-    }
+  .hero-meta {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-top: 48px;
+    opacity: 0;
+    animation: fadeUp 0.6s 1s forwards;
+  }
+  .hero-bio {
+    max-width: 380px;
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+  .hero-bio strong { color: var(--text); font-weight: 500; }
+  .hero-cta { display: flex; gap: 14px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 13px 26px;
+    border-radius: 60px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary {
+    background: var(--lime);
+    color: #0E0E12;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(200,255,87,0.25); }
+  .btn-outline {
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .btn-outline:hover { border-color: rgba(245,240,232,0.3); transform: translateY(-2px); }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .scroll-hint {
+    position: absolute;
+    bottom: 28px; right: 48px;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+  .scroll-hint::after {
+    content: '';
+    width: 1px; height: 48px;
+    background: linear-gradient(to bottom, var(--muted), transparent);
+    animation: pulse 1.8s infinite;
+  }
 
-    html { scroll-behavior: smooth; font-size: 17px; }
+  /* ─── Section base ─── */
+  section {
+    position: relative; z-index: 1;
+    padding: 100px 48px;
+  }
+  .section-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--lime);
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .section-heading {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin-bottom: 60px;
+  }
 
-    body {
-      font-family: var(--font-body);
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.75;
-    }
+  /* ─── About ─── */
+  #about { border-top: 1px solid var(--border); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .about-text { font-size: 1.05rem; color: var(--muted); line-height: 1.85; }
+  .about-text p + p { margin-top: 20px; }
+  .about-text strong { color: var(--text); font-weight: 500; }
 
-    /* ─── HEADER / HERO ─── */
-    .site-header {
-      background: var(--navy);
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .site-header .logo {
-      color: #fff;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      letter-spacing: -0.3px;
-    }
-    .site-header nav a {
-      color: #94a3b8;
-      text-decoration: none;
-      font-size: 0.85rem;
-      margin-left: 20px;
-      transition: color .2s;
-    }
-    .site-header nav a:hover { color: #fff; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .skill-chip {
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.82rem;
+    color: var(--muted);
+    display: flex; align-items: center; gap: 10px;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+  }
+  .skill-chip:hover { border-color: var(--indigo); color: var(--text); background: rgba(107,107,255,0.07); }
+  .skill-chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--indigo); flex-shrink: 0; }
 
-    /* ─── BREADCRUMB ─── */
-    .breadcrumb {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 24px;
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-    .breadcrumb a { color: var(--link); text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { margin: 0 6px; }
+  /* ─── Projects ─── */
+  #projects { border-top: 1px solid var(--border); }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+  }
+  .proj-card {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--surface);
+    transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), border-color 0.3s, box-shadow 0.3s;
+    cursor: none;
+  }
+  .proj-card:hover { transform: translateY(-6px); border-color: rgba(245,240,232,0.18); box-shadow: 0 24px 60px rgba(0,0,0,0.4); }
+  .proj-card.large { grid-column: span 7; }
+  .proj-card.small { grid-column: span 5; }
+  .proj-card.wide  { grid-column: span 12; display: grid; grid-template-columns: 1fr 1fr; }
 
-    /* ─── HERO ─── */
-    .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, #1a2e4a 100%);
-      padding: 60px 24px 52px;
-      text-align: center;
-      color: #fff;
-    }
-    .hero-tag {
-      display: inline-block;
-      background: var(--green);
-      color: #fff;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 100px;
-      margin-bottom: 20px;
-    }
-    .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(1.9rem, 4.5vw, 2.8rem);
-      line-height: 1.2;
-      max-width: 740px;
-      margin: 0 auto 16px;
-      color: #fff;
-    }
-    .hero p {
-      font-size: 1.05rem;
-      color: #94a3b8;
-      max-width: 580px;
-      margin: 0 auto 28px;
-    }
-    .hero-meta {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      font-size: 0.82rem;
-      color: #64748b;
-    }
-    .hero-meta .avatar {
-      width: 34px; height: 34px;
-      border-radius: 50%;
-      background: var(--green);
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 0.85rem; color: #fff;
-    }
+  .proj-visual {
+    aspect-ratio: 4/3;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .proj-card.wide .proj-visual { aspect-ratio: unset; min-height: 240px; }
+  .proj-visual::before {
+    content: '';
+    position: absolute; inset: 0;
+    opacity: 0.08;
+  }
+  .v1 { background: linear-gradient(135deg, #6B6BFF 0%, #C8FF57 100%); }
+  .v1::before { background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  .v2 { background: linear-gradient(135deg, #FF6B6B 0%, #FFD36B 100%); }
+  .v3 { background: linear-gradient(135deg, #1a1a2e 0%, #6B6BFF 100%); }
+  .v4 { background: linear-gradient(135deg, #0f3460 0%, #C8FF57 100%); }
+  .v5 { background: linear-gradient(135deg, #2d2d2d 0%, #FF6B9D 100%); }
 
-    /* ─── MAIN LAYOUT ─── */
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-      display: grid;
-      grid-template-columns: minmax(0,1fr) 240px;
-      gap: 48px;
-      align-items: start;
-    }
+  .proj-emoji { font-size: 3.5rem; position: relative; z-index: 1; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)); }
 
-    /* ─── ARTICLE CONTENT ─── */
-    article h2 {
-      font-family: var(--font-display);
-      font-size: 1.7rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin: 48px 0 16px;
-      padding-top: 8px;
-      border-top: 3px solid var(--green);
-      line-height: 1.3;
-    }
-    article h2:first-child { margin-top: 0; }
+  .proj-info { padding: 24px 28px 28px; }
+  .proj-card.wide .proj-info { display: flex; flex-direction: column; justify-content: center; padding: 40px; }
+  .proj-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .proj-tag {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 40px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .proj-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .proj-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.65; }
+  .proj-arrow {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--lime);
+    text-decoration: none;
+    cursor: none;
+    transition: gap 0.2s;
+  }
+  .proj-arrow:hover { gap: 10px; }
 
-    article h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin: 28px 0 10px;
-    }
+  /* ─── Process ─── */
+  #process { border-top: 1px solid var(--border); }
+  .process-track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .process-step {
+    background: var(--bg);
+    padding: 40px 32px;
+    transition: background 0.2s;
+  }
+  .process-step:hover { background: var(--surface); }
+  .step-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--lime);
+    margin-bottom: 20px;
+  }
+  .step-icon { font-size: 2rem; margin-bottom: 16px; }
+  .step-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .step-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.7; }
 
-    article p { margin-bottom: 18px; color: #334155; }
+  /* ─── Tools ─── */
+  #tools { border-top: 1px solid var(--border); }
+  .tools-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+  .tool-pill {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    border-radius: 60px;
+    font-size: 0.85rem;
+    color: var(--text);
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  }
+  .tool-pill:hover { border-color: var(--lime); background: rgba(200,255,87,0.05); transform: translateY(-2px); }
+  .tool-icon { font-size: 1.1rem; }
+  .cert-card {
+    display: inline-flex; align-items: center; gap: 16px;
+    padding: 20px 28px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .cert-icon { font-size: 2rem; }
+  .cert-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 2px; }
+  .cert-sub { font-size: 0.78rem; color: var(--muted); }
 
-    article a { color: var(--link); text-decoration: underline; }
-    article a:hover { color: var(--green); }
+  /* ─── Contact ─── */
+  #contact {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding-bottom: 140px;
+  }
+  .contact-heading {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.8rem, 7vw, 6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 32px;
+  }
+  .contact-heading em { font-style: normal; color: var(--lime); }
+  .contact-sub { font-size: 1rem; color: var(--muted); max-width: 400px; margin: 0 auto 48px; line-height: 1.75; }
+  .contact-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .social-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 22px;
+    border: 1px solid var(--border);
+    border-radius: 60px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-decoration: none;
+    cursor: none;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+  }
+  .social-link:hover { color: var(--text); border-color: rgba(245,240,232,0.25); background: rgba(245,240,232,0.04); }
 
-    article ul, article ol {
-      margin: 0 0 20px 22px;
-      color: #334155;
-    }
-    article li { margin-bottom: 7px; }
+  /* ─── Footer ─── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: relative; z-index: 1;
+  }
+  .footer-copy { font-size: 0.8rem; color: var(--muted); }
+  .footer-status {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.8rem; color: var(--muted);
+  }
+  .status-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 0 rgba(74,222,128,0.4);
+    animation: ping 2s infinite;
+  }
 
-    article strong { color: var(--navy); }
+  /* ─── Animations ─── */
+  @keyframes slideUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50%       { opacity: 1; }
+  }
+  @keyframes ping {
+    0%   { box-shadow: 0 0 0 0 rgba(74,222,128,0.5); }
+    70%  { box-shadow: 0 0 0 8px rgba(74,222,128,0); }
+    100% { box-shadow: 0 0 0 0 rgba(74,222,128,0); }
+  }
 
-    /* ─── CALLOUT BOXES ─── */
-    .callout {
-      border-left: 4px solid var(--green);
-      background: var(--green-lt);
-      padding: 16px 18px;
-      border-radius: 0 var(--radius) var(--radius) 0;
-      margin: 24px 0;
-      font-size: 0.92rem;
-      color: #166534;
-    }
-    .callout strong { color: #14532d; }
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ─── STEPS CARD ─── */
-    .step-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 22px;
-      margin: 18px 0;
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-    .step-num {
-      min-width: 36px; height: 36px;
-      background: var(--navy);
-      color: #fff;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 0.9rem;
-    }
-    .step-content p { margin: 0; font-size: 0.93rem; }
-    .step-content h4 { font-size: 0.97rem; font-weight: 600; margin-bottom: 4px; color: var(--navy); }
-
-    /* ─── RESOURCE TABLE ─── */
-    .resource-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.88rem;
-      margin: 20px 0 28px;
-    }
-    .resource-table th {
-      background: var(--navy);
-      color: #fff;
-      text-align: left;
-      padding: 10px 14px;
-      font-weight: 600;
-    }
-    .resource-table td {
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--border);
-      color: #334155;
-    }
-    .resource-table tr:nth-child(even) td { background: #f1f5f9; }
-
-    /* ─── FAQ SECTION ─── */
-    .faq-item {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      margin-bottom: 12px;
-      overflow: hidden;
-    }
-    .faq-q {
-      width: 100%;
-      background: var(--white);
-      border: none;
-      padding: 16px 18px;
-      text-align: left;
-      font-weight: 600;
-      font-size: 0.95rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: var(--navy);
-      transition: background .2s;
-    }
-    .faq-q:hover { background: #f1f5f9; }
-    .faq-q .icon { font-size: 1.2rem; transition: transform .25s; }
-    .faq-q.open .icon { transform: rotate(45deg); }
-    .faq-a {
-      display: none;
-      padding: 0 18px 16px;
-      font-size: 0.9rem;
-      color: #475569;
-      background: var(--white);
-    }
-    .faq-a.open { display: block; }
-
-    /* ─── TOC SIDEBAR ─── */
-    .toc-sidebar {
-      position: sticky;
-      top: 24px;
-    }
-    .toc-box {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-    }
-    .toc-title {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-    .toc-box ol {
-      list-style: none;
-      margin: 0; padding: 0;
-    }
-    .toc-box li {
-      margin-bottom: 6px;
-    }
-    .toc-box a {
-      text-decoration: none;
-      font-size: 0.83rem;
-      color: var(--muted);
-      line-height: 1.4;
-      display: block;
-      padding: 4px 8px;
-      border-left: 2px solid transparent;
-      transition: color .2s, border-color .2s;
-    }
-    .toc-box a:hover,
-    .toc-box a.active {
-      color: var(--green);
-      border-left-color: var(--green);
-    }
-
-    /* ─── FOOTER ─── */
-    .site-footer {
-      background: var(--navy);
-      color: #64748b;
-      text-align: center;
-      padding: 28px 24px;
-      font-size: 0.82rem;
-    }
-    .site-footer a { color: #94a3b8; text-decoration: none; }
-    .site-footer a:hover { color: #fff; }
-
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-      .toc-sidebar {
-        display: none;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * { transition: none !important; scroll-behavior: auto !important; }
-    }
-  </style>
+  /* ─── Responsive ─── */
+  @media (max-width: 900px) {
+    nav { padding: 20px 24px; }
+    .nav-links { display: none; }
+    #hero, section, footer { padding-left: 24px; padding-right: 24px; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .proj-card.large, .proj-card.small { grid-column: span 12; }
+    .proj-card.wide { grid-column: span 12; grid-template-columns: 1fr; }
+    .process-track { grid-template-columns: 1fr 1fr; }
+    footer { flex-direction: column; gap: 12px; text-align: center; }
+    .scroll-hint { display: none; }
+  }
+  @media (max-width: 500px) {
+    .hero-meta { flex-direction: column; align-items: flex-start; gap: 28px; }
+    .process-track { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
 </head>
-
 <body>
 
-  <!-- ════════════════════════════════════
-       SITE HEADER
-  ════════════════════════════════════ -->
-  <header class="site-header">
-    <a href="/" class="logo">bijaychaudhary123.com.np</a>
-    <nav aria-label="Site navigation">
-      <a href="/">Home</a>
-      <a href="/blog">Blog</a>
-      <a href="/about">About</a>
-    </nav>
-  </header>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="spotlight"></div>
 
-  <!-- ════════════════════════════════════
-       BREADCRUMB (visible + schema above)
-  ════════════════════════════════════ -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a>
-    <span aria-hidden="true">›</span>
-    <a href="/blog">Blog</a>
-    <span aria-hidden="true">›</span>
-    <span aria-current="page">How to Learn SEO as a Beginner</span>
-  </nav>
+<!-- ── NAV ── -->
+<nav id="nav">
+  <a href="#hero" class="logo">bj<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:hello@bj.design" class="btn btn-primary" style="padding:10px 20px;font-size:0.8rem;">Let's Talk</a>
+</nav>
 
-  <!-- ════════════════════════════════════
-       HERO
-  ════════════════════════════════════ -->
-  <section class="hero">
-    <span class="hero-tag">SEO · Beginner Guide</span>
-    <h1>How to Learn SEO as a Beginner — Complete 2025 Guide</h1>
-    <p>From zero knowledge to ranking on Google. A practical, no-fluff roadmap for anyone starting their SEO journey.</p>
-    <div class="hero-meta">
-      <div class="avatar" aria-hidden="true">B</div>
-      <span>By <strong style="color:#fff">Bijay Chaudhary</strong></span>
-      <span>·</span>
-      <time datetime="2025-06-23">June 23, 2025</time>
-      <span>·</span>
-      <span>12 min read</span>
+<!-- ── HERO ── -->
+<section id="hero">
+  <p class="hero-eyebrow">UI/UX Designer &amp; Creative Technologist</p>
+  <h1 class="hero-title">
+    <span class="line">Designing</span>
+    <span class="line">experiences</span>
+    <span class="line">that <em>connect.</em></span>
+  </h1>
+  <div class="hero-meta">
+    <p class="hero-bio">
+      I'm <strong>bj</strong> — a UI/UX designer based in Kathmandu, crafting
+      <strong>intuitive interfaces</strong> and <strong>purposeful digital products</strong>
+      that bridge people and technology.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+      <a href="#contact" class="btn btn-outline">Get in touch</a>
     </div>
-  </section>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
 
-  <!-- ════════════════════════════════════
-       MAIN CONTENT + SIDEBAR
-  ════════════════════════════════════ -->
-  <div class="container">
-
-    <!-- ARTICLE -->
-    <main id="main-content">
-      <article>
-
-        <!-- ── 1. WHAT IS SEO ── -->
-        <h2 id="what-is-seo">What is SEO and Why Does It Matter?</h2>
-        <p>
-          <strong>SEO (Search Engine Optimization)</strong> is the practice of improving your website so that it
-          appears higher in search engine results pages (SERPs) — especially Google. When someone searches
-          "best laptops under 50,000 NPR," the websites that show up on the first page got there because of
-          good SEO, not luck.
-        </p>
-        <p>
-          As a beginner, here's the key insight: <strong>Google wants to show the most helpful, trustworthy
-          content to its users.</strong> SEO is about proving to Google that your content is exactly that.
-        </p>
-        <div class="callout">
-          <strong>Why learn SEO in 2025?</strong> Over 8 billion searches happen on Google every day.
-          Websites that rank on page one receive over 90% of all clicks. SEO is one of the highest-ROI
-          digital skills you can learn — and it's completely free to start.
-        </div>
-
-        <!-- ── 2. HOW SEARCH ENGINES WORK ── -->
-        <h2 id="how-search-engines-work">How Search Engines Actually Work</h2>
-        <p>Before you optimize anything, you need to understand what happens when someone types a query into Google. There are three steps:</p>
-
-        <div class="step-card">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <h4>Crawling</h4>
-            <p>Google sends "bots" (also called spiders or crawlers) that travel across the web, following links from page to page and discovering content.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <h4>Indexing</h4>
-            <p>After crawling, Google stores and organizes pages in its massive index — essentially a giant database of web pages. If your page isn't indexed, it won't appear in search results.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <h4>Ranking</h4>
-            <p>When a user searches, Google's algorithm scores indexed pages against 200+ ranking factors and orders them by relevance and quality. Your job is to score well on these factors.</p>
-          </div>
-        </div>
-
-        <!-- ── 3. KEYWORD RESEARCH ── -->
-        <h2 id="keyword-research">Step 1 — Keyword Research</h2>
-        <p>
-          Keywords are the words and phrases people type into Google. Keyword research means finding the right
-          keywords to target — ones that people actually search for, and that you can realistically rank for.
-        </p>
-
-        <h3>Understanding keyword types</h3>
-        <ul>
-          <li><strong>Short-tail keywords</strong> — 1–2 words, e.g., "SEO". High volume, very hard to rank.</li>
-          <li><strong>Long-tail keywords</strong> — 4+ words, e.g., "how to learn SEO for free in 2025". Lower volume, much easier to rank, and often more targeted.</li>
-          <li><strong>Informational keywords</strong> — People want to learn: "what is SEO", "how to do keyword research".</li>
-          <li><strong>Commercial keywords</strong> — People want to compare: "best SEO tools 2025".</li>
-          <li><strong>Transactional keywords</strong> — People want to buy: "buy Ahrefs subscription".</li>
-        </ul>
-
-        <div class="callout">
-          <strong>Beginner tip:</strong> Start with long-tail, informational keywords. They're easier to rank for and let you build authority before competing on broader terms.
-        </div>
-
-        <h3>Free keyword research tools</h3>
-        <ul>
-          <li><strong>Google Search Console</strong> — Shows what keywords your site already ranks for (free, essential).</li>
-          <li><strong>Google Keyword Planner</strong> — Official Google tool, shows search volume and competition.</li>
-          <li><strong>Ubersuggest (free tier)</strong> — Good for beginners, shows keyword difficulty.</li>
-          <li><strong>AnswerThePublic</strong> — Generates question-based keywords ("how to…", "what is…").</li>
-          <li><strong>Google autocomplete &amp; "People also ask"</strong> — Free, powerful, and underused.</li>
-        </ul>
-
-        <!-- ── 4. ON-PAGE SEO ── -->
-        <h2 id="on-page-seo">Step 2 — On-Page SEO</h2>
-        <p>
-          On-page SEO refers to everything you can optimize <em>within</em> a page. This is where beginners
-          have the most direct control and can see results fastest.
-        </p>
-
-        <h3>The key on-page elements</h3>
-
-        <div class="step-card">
-          <div class="step-num">→</div>
-          <div class="step-content">
-            <h4>Title Tag <code>&lt;title&gt;</code></h4>
-            <p>The most important on-page element. Include your primary keyword near the start. Keep it under 60 characters. Example: <em>"How to Learn SEO as a Beginner — 2025 Guide"</em>.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-num">→</div>
-          <div class="step-content">
-            <h4>Meta Description</h4>
-            <p>Not a direct ranking factor, but affects click-through rate. Write 150–160 characters summarizing the page. Include the keyword naturally.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-num">→</div>
-          <div class="step-content">
-            <h4>Heading Structure (H1 → H2 → H3)</h4>
-            <p>Use one <code>&lt;h1&gt;</code> per page (your main topic). Use <code>&lt;h2&gt;</code> for major sections. Naturally include related keywords in headings.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-num">→</div>
-          <div class="step-content">
-            <h4>URL Structure</h4>
-            <p>Keep URLs short, descriptive, and keyword-rich. Good: <code>/how-to-learn-seo-beginners</code>. Bad: <code>/post?id=143</code>.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-num">→</div>
-          <div class="step-content">
-            <h4>Image Alt Text</h4>
-            <p>Every image needs an <code>alt</code> attribute describing what it shows. This helps Google understand images and improves accessibility.</p>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-num">→</div>
-          <div class="step-content">
-            <h4>Internal Linking</h4>
-            <p>Link to other relevant pages on your own site. This helps Google discover your pages and distributes "link authority" across your site.</p>
-          </div>
-        </div>
-
-        <!-- ── 5. TECHNICAL SEO ── -->
-        <h2 id="technical-seo">Step 3 — Technical SEO</h2>
-        <p>
-          Technical SEO ensures that search engines can crawl, index, and render your website without issues.
-          Since you're hosting on GitHub Pages with Cloudflare, you already have a head start.
-        </p>
-
-        <h3>Core technical SEO checklist</h3>
-        <ul>
-          <li>✅ <strong>HTTPS</strong> — Cloudflare handles this for your <code>.com.np</code> domain automatically.</li>
-          <li>✅ <strong>Mobile-friendly</strong> — Google uses mobile-first indexing. Always test with Google's Mobile-Friendly Test.</li>
-          <li>✅ <strong>Page speed</strong> — Compress images, minify CSS/JS. Use Google PageSpeed Insights (target 90+ score).</li>
-          <li>✅ <strong>Sitemap.xml</strong> — Create and submit a sitemap to Google Search Console so all pages get indexed.</li>
-          <li>✅ <strong>Robots.txt</strong> — Tell search engines which pages to crawl and which to skip.</li>
-          <li>✅ <strong>Canonical tags</strong> — Prevent duplicate content issues by telling Google which version of a URL is the "real" one.</li>
-          <li>✅ <strong>Structured data (JSON-LD)</strong> — Like the schema markup in this very page! Helps Google understand content and display rich snippets.</li>
-        </ul>
-
-        <div class="callout">
-          <strong>GitHub Pages + Cloudflare tip:</strong> Enable Cloudflare's "Auto Minify" for HTML, CSS, and JavaScript, and turn on "Brotli" compression. This can significantly improve your page load speed with zero code changes.
-        </div>
-
-        <!-- ── 6. CONTENT SEO ── -->
-        <h2 id="content-seo">Step 4 — Content and E-E-A-T</h2>
-        <p>
-          Google's quality guidelines center on <strong>E-E-A-T: Experience, Expertise, Authoritativeness,
-          and Trustworthiness</strong>. Great content that demonstrates these qualities will always outrank
-          thin or AI-stuffed content.
-        </p>
-
-        <h3>How to write SEO-friendly content</h3>
-        <ul>
-          <li><strong>Match search intent</strong> — Understand <em>why</em> someone is searching. Are they looking to learn, compare, or buy? Your content should satisfy that intent completely.</li>
-          <li><strong>Write for humans first</strong> — Include keywords naturally. Forcing keywords into every sentence hurts readability and rankings.</li>
-          <li><strong>Use semantic keywords</strong> — Related words and phrases (LSI keywords) signal topic depth to Google. If your post is about SEO, mention "search rankings," "meta tags," "SERP," etc.</li>
-          <li><strong>Long-form content wins</strong> — The average first-page result on Google is over 1,400 words. Depth beats brevity for informational queries.</li>
-          <li><strong>Update content regularly</strong> — Google loves fresh content. Add an "Updated: [date]" note and review old posts every 6–12 months.</li>
-        </ul>
-
-        <!-- ── 7. LINK BUILDING ── -->
-        <h2 id="link-building">Step 5 — Link Building</h2>
-        <p>
-          Links from other websites to yours (called <strong>backlinks</strong>) are one of Google's strongest
-          ranking signals. A link from a trusted site is essentially a vote of confidence in your content.
-        </p>
-
-        <h3>Beginner link building strategies</h3>
-        <ul>
-          <li><strong>Guest posting</strong> — Write articles for other blogs in your niche. They publish it, you get a backlink.</li>
-          <li><strong>Create linkable assets</strong> — Original research, statistics posts, free tools, and infographics naturally attract links.</li>
-          <li><strong>Broken link building</strong> — Find broken links on other sites and suggest your content as a replacement.</li>
-          <li><strong>Community participation</strong> — Answer questions on Reddit, Quora, or niche forums with genuine, helpful answers (and occasionally link to your content when relevant).</li>
-          <li><strong>Social sharing</strong> — While social links don't directly boost rankings, they increase visibility, which leads to natural backlinks.</li>
-        </ul>
-
-        <div class="callout">
-          <strong>Quality over quantity:</strong> One backlink from a reputable news site or educational domain is worth more than 100 links from low-quality directories. Never buy backlinks — Google penalizes this.
-        </div>
-
-        <!-- ── 8. TOOLS ── -->
-        <h2 id="seo-tools">Best Free SEO Tools for Beginners</h2>
-
-        <table class="resource-table" aria-label="Free SEO tools for beginners">
-          <thead>
-            <tr>
-              <th scope="col">Tool</th>
-              <th scope="col">Purpose</th>
-              <th scope="col">Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Google Search Console</strong></td>
-              <td>Monitor indexing, rankings, and crawl errors</td>
-              <td>Free</td>
-            </tr>
-            <tr>
-              <td><strong>Google Analytics 4</strong></td>
-              <td>Track website traffic and user behavior</td>
-              <td>Free</td>
-            </tr>
-            <tr>
-              <td><strong>Google PageSpeed Insights</strong></td>
-              <td>Measure and improve page load speed</td>
-              <td>Free</td>
-            </tr>
-            <tr>
-              <td><strong>Ubersuggest</strong></td>
-              <td>Keyword research and competitor analysis</td>
-              <td>Free tier</td>
-            </tr>
-            <tr>
-              <td><strong>Screaming Frog (free)</strong></td>
-              <td>Technical SEO crawl up to 500 pages</td>
-              <td>Free</td>
-            </tr>
-            <tr>
-              <td><strong>Ahrefs Webmaster Tools</strong></td>
-              <td>Backlink analysis for your own site</td>
-              <td>Free</td>
-            </tr>
-            <tr>
-              <td><strong>Schema Markup Validator</strong></td>
-              <td>Test your structured data / JSON-LD</td>
-              <td>Free</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- ── 9. LEARNING ROADMAP ── -->
-        <h2 id="learning-roadmap">Your 90-Day SEO Learning Roadmap</h2>
-
-        <h3>Month 1 — Foundations</h3>
-        <ul>
-          <li>Read Google's official SEO Starter Guide (free on Google)</li>
-          <li>Set up Google Search Console and Google Analytics for your site</li>
-          <li>Learn keyword research: find 10 keywords you want to target</li>
-          <li>Write 4 blog posts optimized for those keywords</li>
-        </ul>
-
-        <h3>Month 2 — Technical &amp; On-Page</h3>
-        <ul>
-          <li>Run a technical audit with Screaming Frog</li>
-          <li>Fix broken links, improve page speed, add a sitemap</li>
-          <li>Add structured data (JSON-LD) to all blog posts</li>
-          <li>Study your competitors' top-ranking pages</li>
-        </ul>
-
-        <h3>Month 3 — Off-Page &amp; Growth</h3>
-        <ul>
-          <li>Start outreach for guest posts or link exchanges</li>
-          <li>Analyze your Search Console data: what's ranking? What can improve?</li>
-          <li>Update your Month 1 posts with new information</li>
-          <li>Build a consistent publishing schedule (2–4 posts/month)</li>
-        </ul>
-
-        <!-- ── 10. FAQ ── -->
-        <h2 id="faq">Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How long does it take to learn SEO?
-            <span class="icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-a">
-            Most beginners grasp the core concepts within 1–3 months of consistent study and practice.
-            Seeing real results on a website usually takes 3–6 months, since search engines need time to
-            crawl and rank your pages.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Is SEO free to learn?
-            <span class="icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-a">
-            Yes! SEO is completely free to learn. Google's own documentation, Moz's Beginner's Guide,
-            and Ahrefs Blog are all free resources. You only need to pay for premium tools once you're
-            working professionally.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Do I need coding skills to learn SEO?
-            <span class="icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-a">
-            Basic HTML knowledge helps for technical SEO, but it is not required to start. Since you're
-            already hosting a site on GitHub Pages, you're ahead of most beginners. Focus on content
-            and strategy first.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How does having a .com.np domain affect SEO?
-            <span class="icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-a">
-            A <code>.com.np</code> domain is a country-code TLD (ccTLD) for Nepal. Google may geo-target
-            your site toward Nepali users by default. If you want a global audience, set your target country
-            to "Unlisted" in Google Search Console's International Targeting settings.
-          </div>
-        </div>
-
-      </article>
-    </main>
-
-    <!-- TABLE OF CONTENTS SIDEBAR -->
-    <aside class="toc-sidebar" aria-label="Table of contents">
-      <div class="toc-box">
-        <p class="toc-title">On this page</p>
-        <ol>
-          <li><a href="#what-is-seo">What is SEO?</a></li>
-          <li><a href="#how-search-engines-work">How Search Engines Work</a></li>
-          <li><a href="#keyword-research">Keyword Research</a></li>
-          <li><a href="#on-page-seo">On-Page SEO</a></li>
-          <li><a href="#technical-seo">Technical SEO</a></li>
-          <li><a href="#content-seo">Content &amp; E-E-A-T</a></li>
-          <li><a href="#link-building">Link Building</a></li>
-          <li><a href="#seo-tools">Free SEO Tools</a></li>
-          <li><a href="#learning-roadmap">90-Day Roadmap</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ol>
+<!-- ── ABOUT ── -->
+<section id="about">
+  <p class="section-label">About me</p>
+  <h2 class="section-heading reveal">Turning curiosity<br>into craft.</h2>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>I'm a <strong>UI/UX design student</strong> at Kimpo University with a passion for building products that feel natural and delightful. I recently completed a <strong>UI/UX Design Course</strong> and apply that knowledge in real-world settings as a <strong>QA Intern at Cloud Sathi</strong>, where I test and refine the ConnQ mobile application.</p>
+      <p>My work sits at the intersection of <strong>user research, visual design, and interaction craft</strong>. I believe good design is invisible — it's the moment a user does exactly what they intended without thinking about it.</p>
+      <p>When I'm not in Figma, I'm building websites, learning SEO, and contributing to Nepal's growing tech ecosystem.</p>
+    </div>
+    <div>
+      <div class="skills-grid">
+        <div class="skill-chip"><span class="dot"></span>User Research</div>
+        <div class="skill-chip"><span class="dot"></span>Wireframing</div>
+        <div class="skill-chip"><span class="dot"></span>Prototyping</div>
+        <div class="skill-chip"><span class="dot"></span>Figma</div>
+        <div class="skill-chip"><span class="dot"></span>Design Systems</div>
+        <div class="skill-chip"><span class="dot"></span>Usability Testing</div>
+        <div class="skill-chip"><span class="dot"></span>Mobile UI</div>
+        <div class="skill-chip"><span class="dot"></span>Visual Design</div>
+        <div class="skill-chip"><span class="dot"></span>Information Architecture</div>
+        <div class="skill-chip"><span class="dot"></span>QA / Testing</div>
       </div>
-    </aside>
+    </div>
+  </div>
+</section>
 
-  </div><!-- /container -->
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <p class="section-label">Selected work</p>
+  <h2 class="section-heading reveal">Projects I'm proud of.</h2>
 
-  <!-- ════════════════════════════════════
-       FOOTER
-  ════════════════════════════════════ -->
-  <footer class="site-footer">
-    <p>© 2025 bijaychaudhary123.com.np · <a href="/privacy">Privacy Policy</a> · <a href="/sitemap.xml">Sitemap</a></p>
-  </footer>
+  <div class="projects-grid">
 
-  <!-- ════════════════════════════════════
-       SCRIPTS — TOC active link & FAQ
-  ════════════════════════════════════ -->
-  <script>
-    /* --- FAQ accordion --- */
-    document.querySelectorAll('.faq-q').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const isOpen = btn.classList.contains('open');
-        // close all
-        document.querySelectorAll('.faq-q').forEach(b => {
-          b.classList.remove('open');
-          b.setAttribute('aria-expanded', 'false');
-          b.nextElementSibling.classList.remove('open');
-        });
-        if (!isOpen) {
-          btn.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-          btn.nextElementSibling.classList.add('open');
-        }
-      });
+    <!-- BidForge -->
+    <div class="proj-card large reveal">
+      <div class="proj-visual v1">
+        <span class="proj-emoji">🔨</span>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="proj-tag">Mobile App</span>
+          <span class="proj-tag">Marketplace</span>
+          <span class="proj-tag">South Asia</span>
+        </div>
+        <p class="proj-name">BidForge</p>
+        <p class="proj-desc">An auction marketplace app designed for South Asian users — with real-time bidding, Nepali Rupee support, and a trust-first user experience built from research personas.</p>
+        <a href="#" class="proj-arrow">View case study →</a>
+      </div>
+    </div>
+
+    <!-- Luxury Watch -->
+    <div class="proj-card small reveal" style="transition-delay:0.1s">
+      <div class="proj-visual v2">
+        <span class="proj-emoji">⌚</span>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="proj-tag">Product UI</span>
+          <span class="proj-tag">E-commerce</span>
+        </div>
+        <p class="proj-name">Luxury Watch PDP</p>
+        <p class="proj-desc">High-end product detail page with a live clock, interactive material swatches, and minimalist editorial aesthetics.</p>
+        <a href="#" class="proj-arrow">View project →</a>
+      </div>
+    </div>
+
+    <!-- Mobile Banking -->
+    <div class="proj-card wide reveal" style="transition-delay:0.15s">
+      <div class="proj-visual v3">
+        <span class="proj-emoji">🏦</span>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="proj-tag">Fintech</span>
+          <span class="proj-tag">Mobile UI</span>
+          <span class="proj-tag">Accessibility</span>
+        </div>
+        <p class="proj-name">Mobile Banking UI</p>
+        <p class="proj-desc">A clean, accessible mobile banking interface designed around clarity and trust. Covers onboarding, dashboard, transactions, and security flows — with WCAG-compliant contrast and gesture-based navigation patterns.</p>
+        <a href="#" class="proj-arrow">View case study →</a>
+      </div>
+    </div>
+
+    <!-- Food Delivery -->
+    <div class="proj-card small reveal" style="transition-delay:0.2s">
+      <div class="proj-visual v4">
+        <span class="proj-emoji">🍜</span>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="proj-tag">Redesign</span>
+          <span class="proj-tag">App UX</span>
+        </div>
+        <p class="proj-name">Food Delivery Redesign</p>
+        <p class="proj-desc">End-to-end redesign of a food delivery app, optimizing checkout flow from 7 steps down to 3.</p>
+        <a href="#" class="proj-arrow">View project →</a>
+      </div>
+    </div>
+
+    <!-- Component Library -->
+    <div class="proj-card large reveal" style="transition-delay:0.25s">
+      <div class="proj-visual v5">
+        <span class="proj-emoji">🧩</span>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="proj-tag">Design System</span>
+          <span class="proj-tag">Component Library</span>
+        </div>
+        <p class="proj-name">Design Component Library</p>
+        <p class="proj-desc">A reusable Figma component library with tokens, variants, and auto-layout patterns — built for speed and consistency across multi-platform design workflows.</p>
+        <a href="#" class="proj-arrow">View library →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section id="process">
+  <p class="section-label">How I work</p>
+  <h2 class="section-heading reveal">Design is a verb.</h2>
+  <div class="process-track reveal">
+    <div class="process-step">
+      <p class="step-num">01</p>
+      <div class="step-icon">🔍</div>
+      <p class="step-title">Discover</p>
+      <p class="step-desc">User interviews, competitor analysis, and defining the real problem — before drawing a single pixel.</p>
+    </div>
+    <div class="process-step">
+      <p class="step-num">02</p>
+      <div class="step-icon">🗺️</div>
+      <p class="step-title">Define</p>
+      <p class="step-desc">Synthesizing insights into personas, user flows, and clear design principles that anchor every decision.</p>
+    </div>
+    <div class="process-step">
+      <p class="step-num">03</p>
+      <div class="step-icon">✏️</div>
+      <p class="step-title">Design</p>
+      <p class="step-desc">Lo-fi wireframes, hi-fi prototypes, and iterative design in Figma — always testable, always purposeful.</p>
+    </div>
+    <div class="process-step">
+      <p class="step-num">04</p>
+      <div class="step-icon">🚀</div>
+      <p class="step-title">Deliver</p>
+      <p class="step-desc">Developer-ready specs, design systems, and QA testing to make sure the final product matches the vision.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── TOOLS ── -->
+<section id="tools">
+  <p class="section-label">Tools &amp; education</p>
+  <h2 class="section-heading reveal">My toolkit.</h2>
+  <div class="tools-row reveal">
+    <div class="tool-pill"><span class="tool-icon">🎨</span> Figma</div>
+    <div class="tool-pill"><span class="tool-icon">📐</span> Figjam</div>
+    <div class="tool-pill"><span class="tool-icon">🖼️</span> Adobe XD</div>
+    <div class="tool-pill"><span class="tool-icon">🌐</span> HTML / CSS</div>
+    <div class="tool-pill"><span class="tool-icon">🔎</span> SEO</div>
+    <div class="tool-pill"><span class="tool-icon">✅</span> QA Testing</div>
+    <div class="tool-pill"><span class="tool-icon">📊</span> Notion</div>
+    <div class="tool-pill"><span class="tool-icon">🐙</span> GitHub</div>
+  </div>
+  <div class="reveal">
+    <div class="cert-card">
+      <span class="cert-icon">🎓</span>
+      <div>
+        <p class="cert-title">UI/UX Design Course — Certified</p>
+        <p class="cert-sub">Kimpo University · 2026 · User Research, Prototyping, Design Systems</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <p class="section-label reveal">Let's work together</p>
+  <h2 class="contact-heading reveal">Ready to build<br>something <em>great?</em></h2>
+  <p class="contact-sub reveal">Open to freelance projects, internships, and full-time design roles. Let's make something people love.</p>
+  <div class="contact-links reveal">
+    <a href="mailto:hello@bj.design" class="btn btn-primary" style="border-radius:60px;">✉ Email me</a>
+    <a href="https://linkedin.com/in/bj" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/bj" class="social-link" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://behance.net/bj" class="social-link" target="_blank" rel="noopener">Behance</a>
+    <a href="https://dribbble.com/bj" class="social-link" target="_blank" rel="noopener">Dribbble</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p class="footer-copy">© 2026 bj. Built with intention.</p>
+  <div class="footer-status">
+    <span class="status-dot"></span>
+    Available for opportunities
+  </div>
+</footer>
+
+<script>
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursor-ring');
+  const spot = document.getElementById('spotlight');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top  = my + 'px';
+    spot.style.setProperty('--mx', mx + 'px');
+    spot.style.setProperty('--my', my + 'px');
+  });
+
+  // Ring lag
+  (function animateRing() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(animateRing);
+  })();
+
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
     });
-
-    /* --- Sticky TOC active highlight --- */
-    const sections = document.querySelectorAll('article h2[id]');
-    const tocLinks = document.querySelectorAll('.toc-box a');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          tocLinks.forEach(a => a.classList.remove('active'));
-          const active = document.querySelector(`.toc-box a[href="#${entry.target.id}"]`);
-          if (active) active.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-20% 0px -75% 0px' });
-
-    sections.forEach(s => observer.observe(s));
-  </script>
-
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
