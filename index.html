@@ -703,9 +703,12 @@
         box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4);
         animation: ping 2s infinite;
       }
-
-      /* ─── Animations ─── */
+/* ─── Animations ─── */
       @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(60px);
+        }
         to {
           opacity: 1;
           transform: translateY(0);
@@ -741,19 +744,6 @@
           box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
         }
       }
-
-      .reveal {
-        opacity: 0;
-        transform: translateY(32px);
-        transition:
-          opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-          transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      .reveal.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
       /* ─── Responsive ─── */
       @media (max-width: 1100px) {
         .process-track {
