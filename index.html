@@ -49,8 +49,13 @@
         body {
           cursor: none;
         }
-        
-        .btn, .proj-card, .social-link, .proj-arrow, a, button {
+
+        .btn,
+        .proj-card,
+        .social-link,
+        .proj-arrow,
+        a,
+        button {
           cursor: none;
         }
 
@@ -116,7 +121,8 @@
 
       /* Hide cursor elements on touch devices entirely */
       @media (max-width: 900px) {
-        #cursor, #cursor-ring {
+        #cursor,
+        #cursor-ring {
           display: none !important;
         }
       }
@@ -187,7 +193,7 @@
       }
 
       /* ─── Hero ─── */
-   /* ─── Hero ─── */
+      /* ─── Hero ─── */
       #hero {
         position: relative;
         min-height: 100vh;
@@ -704,7 +710,7 @@
         box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4);
         animation: ping 2s infinite;
       }
-/* ─── Animations ─── */
+      /* ─── Animations ─── */
       @keyframes slideUp {
         from {
           opacity: 0;
@@ -846,8 +852,8 @@
       </h1>
       <div class="hero-meta">
         <p class="hero-bio">
-          I'm <strong>bj</strong> — a UI/UX designer based in Kathmandu,
-          crafting <strong>intuitive interfaces</strong> and
+          I'm <strong>Bijay Chaudhary</strong> — a UI/UX designer based in
+          Kathmandu, crafting <strong>intuitive interfaces</strong> and
           <strong>purposeful digital products</strong>
           that bridge people and technology.
         </p>
@@ -856,7 +862,6 @@
           <a href="#contact" class="btn btn-outline">Get in touch</a>
         </div>
       </div>
-      <div class="scroll-hint">Scroll</div>
     </section>
 
     <!-- ── ABOUT ── -->
@@ -1082,7 +1087,7 @@
         <div class="tool-pill">
           <span class="tool-icon">🌐</span> HTML / CSS
         </div>
-       
+
         <div class="tool-pill"><span class="tool-icon">📊</span> Notion</div>
         <div class="tool-pill"><span class="tool-icon">🐙</span> GitHub</div>
       </div>
@@ -1095,9 +1100,19 @@
               Completed a comprehensive UI/UX design course covering user
               research, wireframing, prototyping, and usability testing.
             </p>
-            <a href="certificate_CION-22265.pdf" target="_blank" style="display: inline-block; margin-top: 10px; color: #007acc; text-decoration: none; font-weight: 500;">
-            View Certificate (PDF) ↗
-          </a>
+            <a
+              href="certificate_CION-22265.pdf"
+              target="_blank"
+              style="
+                display: inline-block;
+                margin-top: 10px;
+                color: #007acc;
+                text-decoration: none;
+                font-weight: 500;
+              "
+            >
+              View Certificate (PDF) ↗
+            </a>
           </div>
         </div>
       </div>
@@ -1180,13 +1195,14 @@
         requestAnimationFrame(animateRing);
       })();
 
-
       // Safety net: ensure hero elements always visible after animations
       setTimeout(() => {
-        document.querySelectorAll('.hero-eyebrow, .hero-title .line, .hero-meta').forEach(el => {
-          el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-        });
+        document
+          .querySelectorAll(".hero-eyebrow, .hero-title .line, .hero-meta")
+          .forEach((el) => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          });
       }, 1800);
       // Nav scroll
       const nav = document.getElementById("nav");
